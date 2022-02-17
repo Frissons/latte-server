@@ -1,7 +1,4 @@
 .matti__logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .matti__logo img{
     width: 35px;
@@ -11,7 +8,7 @@
 
 .matti__logo a{
     display: flex;
-    font-weight: 500;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
 }

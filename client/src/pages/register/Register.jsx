@@ -1,8 +1,10 @@
-import { useState, useEffect } from "react";
+import {useState, useEffect} from "react";
 import {useSelector, useDispatch} from 'react-redux';
 import {useNavigate} from 'react-router-dom';
 import {toast} from 'react-toastify';
+import Spinner from '../../components/Spinner'
 import {register,reset} from '../../features/auth/authSlice'
+
 
 function Register() {
 
@@ -34,6 +36,7 @@ function Register() {
     }
 
     dispatch(reset())
+    
   }, [user, isError, isSuccess, message ,navigate,dispatch]) 
 
 
@@ -51,12 +54,21 @@ function Register() {
       toast.error('Passwords do not match')
     }else{
       const userData = {
-        name, email, password, grade ,section
+        name,
+        email,
+        password,
+        grade,
+        section
       }
       dispatch(register(userData))
     }
 
   }
+
+  if(isLoading){
+    return <Spinner/>
+  }
+
 
   return (
     <>

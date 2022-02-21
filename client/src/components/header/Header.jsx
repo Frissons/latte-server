@@ -1,10 +1,10 @@
 import { BiExit, BiUserCircle } from 'react-icons/bi';
 import { BsShieldLock } from 'react-icons/bs';
 import { Link, useNavigate } from 'react-router-dom';
-import { logout, reset } from '../features/auth/authSlice';
+import { logout, reset } from '../../features/auth/authSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import './header.css'
-import Logo from '../assets/logo.svg';
+import Logo from '../../assets/logo.svg';
 
 
 function Header() {

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { login, reset } from '../../features/auth/authSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import {toast} from 'react-toastify';
-import Spinner from '../../components/Spinner';
+import Spinner from '../../components/spinner/Spinner';
 
 
 function Login() {
@@ -28,7 +28,6 @@ function Login() {
     if(isSuccess || user) {
       navigate('/');
     }
-
     dispatch(reset())
     
   }, [user, isError, isSuccess, message ,navigate,dispatch]) 

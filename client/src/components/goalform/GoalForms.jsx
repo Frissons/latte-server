@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useDispatch } from "react-redux"
 import {createGoal} from '../../features/goals/goalsSlice';
 
@@ -9,10 +9,12 @@ function GoalForm() {
   const [text, setText] = useState('')
   
   const goalSubmit = (e) => {
-    e.preventDefault()
-    dispatch(createGoal({text}))
-    setText('')
+    e.preventDefault();
+    dispatch(createGoal({text}));
+    setText('');
   }
+
+
   return (
     <section className="form">
       <form onSubmit={goalSubmit}>

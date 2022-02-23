@@ -186,7 +186,7 @@ h3 {
   width: 64px;
   height: 64px;
   border: 8px solid;
-  border-color: #000 transparent #555 transparent;
+  border-color: rgb(255, 251, 0) transparent rgba(4, 255, 67, 0.466) transparent;
   border-radius: 50%;
   animation: spin 1.2s linear infinite;
 }

@@ -4,6 +4,7 @@ import {createGoal} from '../../features/goals/goalsSlice';
 
 
 function GoalForm() {
+  
   const dispatch = useDispatch();
   const [text, setText] = useState('')
   
@@ -17,7 +18,12 @@ function GoalForm() {
       <form onSubmit={goalSubmit}>
         <div className="form-group">
           <label htmlFor="text">Goal</label>
-          <input type="text" name='text' value={text} onChange={(e) => setText(e.target.value)}/>
+          <input type="text"
+          name='text'
+          value={text}
+          placeholder="write something..."
+          onChange={(e) =>
+          setText(e.target.value)}/>
         </div>
         <div className="form-group">
           <button

@@ -22,10 +22,12 @@ function Dashboard() {
       console.log(message);
     }
     if (!user) {
-      navigate('/login')
+      navigate('/welcome')
+    } else {
+
+      dispatch(getGoals())
     }
 
-    dispatch(getGoals())
 
     return () => {
       dispatch(reset())

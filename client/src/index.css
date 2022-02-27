@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 * {
   margin: 0;
@@ -7,9 +7,9 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   height: 100vh;
-  background: #828282;
+  background: #fff;
 }
 
 a {
@@ -138,9 +138,9 @@ h3 {
 
 .btn {
   padding: 10px 20px;
-  border: 1px solid #000;
+  border: 1px solid rgb(2, 125, 196);
   border-radius: 5px;
-  background: #000;
+  background: rgb(2, 125, 196);
   color: #fff;
   font-size: 16px;
   font-weight: 700;

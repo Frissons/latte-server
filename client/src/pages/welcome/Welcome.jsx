@@ -1,17 +1,17 @@
+import Leaderboards from "../../components/leaderBoard/Leaderboards"
 
-function welcome() {
+function Welcome() {
     return (
-        <>
+        <div>
             <section className="heading">
                 <h1>SSG - Elections {new Date().getFullYear()}</h1>
                 <p>Leaderboard</p>
             </section>
-            <section className="content">
-                <div className="goals">RED</div>
-        <div className="goals">BLUE</div>
+            <section className="matti__welcome-leaderboard">
+                <Leaderboards />
             </section>
-        </>
+        </div>
     )
 }
 
-export default welcome
+export default Welcome

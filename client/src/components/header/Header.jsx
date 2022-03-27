@@ -17,6 +17,7 @@ function Header() {
         dispatch(reset())
         navigate('/')
     }
+
     return (
 
         <header className='header'>

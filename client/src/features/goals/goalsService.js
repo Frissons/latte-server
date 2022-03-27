@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = '/api/goals/';
+const API_URL = 'https://matti-nhs.heroku.app/api/goals/';
 
 //get goal to backend
 const getGoals = async (token) => {

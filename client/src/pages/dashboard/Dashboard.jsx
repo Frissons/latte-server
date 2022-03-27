@@ -6,9 +6,6 @@ import Spinner from '../../components/spinner/Spinner'
 import { getGoals, reset } from '../../features/goals/goalsSlice'
 import GoalItem from '../../components/goalitem/GoalItem';
 
-
-
-
 function Dashboard() {
 
   const navigate = useNavigate();
@@ -27,7 +24,6 @@ function Dashboard() {
 
       dispatch(getGoals())
     }
-
 
     return () => {
       dispatch(reset())
@@ -55,8 +51,8 @@ function Dashboard() {
             }
           </div>)
           : (
-          <h3>You have no any goals</h3>
-        )}
+            <h3>You have no any goals</h3>
+          )}
       </section>
     </>
   )

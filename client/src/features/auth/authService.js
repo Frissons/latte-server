@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'https://matti-nhs.heroku.app/api/users/';
+const API_URL = 'https://matti-nhs.herokuapp.com/api/users/';
+
 
 //register user
 const register = async (userData) => {

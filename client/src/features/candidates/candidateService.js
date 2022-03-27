@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'https://matti-nhs.heroku.app/api/candidates/';
+const API_URL = 'https://matti-nhs.herokuapp.com/api/candidates/';
+
 
 //Instructions to Get information/data to the backend 
 const getCandidate = async () => {

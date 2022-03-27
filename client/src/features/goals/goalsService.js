@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://matti-nhs.heroku.app/api/goals/';
+const API_URL = 'https://matti-nhs.herokuapp.com/api/goals/';
 
 //get goal to backend
 const getGoals = async (token) => {
@@ -20,7 +20,7 @@ const createGoal = async (goalData, token) => {
             authorization: `Bearer ${token}`
         }
     }
-    const response = await axios.post(API_URL, goalData, config)
+    const response = await axios.post( API_URL, goalData, config)
     return response.data
 }
 
